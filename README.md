@@ -1,4 +1,4 @@
-# SysCord
+# Discord_Directions
 
 Prototipo educativo de una plataforma de comunicación inspirado en interfaces modernas tipo Discord, construido con **HTML5 + CSS3 + JavaScript vanilla**.
 
