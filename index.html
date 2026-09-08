@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SysCord | Prototipo educativo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" aria-label="SysCord">
+    <aside class="servers-panel">
+      <header>
+        <h1>SysCord</h1>
+        <p>Prototipo educativo de una plataforma de comunicación</p>
+      </header>
+      <div id="serverList" class="scroll"></div>
+      <div class="panel-actions">
+        <button id="addServerBtn" class="primary">+ Servidor</button>
+      </div>
+    </aside>
+
+    <section class="channels-panel">
+      <div class="panel-title-row">
+        <h2 id="currentServerName">Servidor</h2>
+        <div class="inline-actions">
+          <button id="renameServerBtn" title="Renombrar servidor">✏️</button>
+          <button id="deleteServerBtn" title="Eliminar servidor">🗑️</button>
+        </div>
+      </div>
+      <div id="channelList" class="scroll"></div>
+      <div class="panel-actions">
+        <button id="addChannelBtn" class="primary">+ Canal</button>
+      </div>
+    </section>
+
+    <main class="chat-panel">
+      <header class="chat-header">
+        <h2 id="currentChannelName"># canal</h2>
+      </header>
+      <div id="messageList" class="messages scroll" aria-live="polite"></div>
+      <form id="messageForm" class="message-form">
+        <input id="messageInput" type="text" maxlength="280" placeholder="Escribe un mensaje..." required />
+        <input id="messageImageInput" type="text" placeholder="Ruta imagen opcional (assets/images/...)" />
+        <button type="submit" class="primary">Enviar</button>
+      </form>
+    </main>
+
+    <aside class="users-panel">
+      <div class="panel-title-row">
+        <h2>Usuarios</h2>
+        <button id="addUserBtn" title="Agregar usuario">+ Usuario</button>
+      </div>
+      <div id="userList" class="scroll"></div>
+    </aside>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal">
+      <h3 id="modalTitle">Formulario</h3>
+      <p id="modalText"></p>
+      <form id="modalForm">
+        <input id="modalInput" type="text" />
+        <div class="modal-actions">
+          <button type="button" id="modalCancelBtn">Cancelar</button>
+          <button type="submit" class="primary">Aceptar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
