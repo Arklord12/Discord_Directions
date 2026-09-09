@@ -19,15 +19,11 @@ El contenido analítico se distribuye a través de servidores temáticos, canale
 
 - **Estructura Temática por Canales:**
     
-    - `#1-introduccion`: Planteamiento, justificación y contexto de la empresa[cite: 3].
-        
-    - `#2-origen-y-evolucion`: Fundación, pivote tecnológico hacia _Discord_ y modelo de monetización (Nitro)[cite: 3].
-        
-    - `#3-conclusiones`: Análisis estratégico, ventajas competitivas e infraestructura social corporativa[cite: 3].
+# PONER ACA LOS CANALES PRINCIPALES
         
 - **Perfiles de Usuario Modales:** Visualización interactiva de avatares, roles corporativos y biografías con soporte de enlaces externos (LinkedIn/referencias)[cite: 3].
     
-- **Renderizado de Markdown Seguro:** Soporte nativo para negritas, cursivas, listas con viñetas, saltos de línea e hipervínculos sanitizados para prevenir inyecciones de código.
+- **Renderizado de Markdown Seguro:** Soporte nativo para negritas, cursivas, listas con viñetas, saltos de línea e hipervínculos sanitizados para prevenir inyecciones de código. listas (- ), negrita (**), subrayado (__), cursiva (*) y saltos (\n)
     
 - **Soporte Multimedia Local:** Visualización de diagramas, capturas y gráficos analíticos integrados como adjuntos en el flujo del chat[cite: 3].
     
