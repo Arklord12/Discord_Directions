@@ -79,6 +79,6 @@ Discord_Directions/
 
 ## 👤 Autor
 
-- **Johan Felipe Prado Guerrero** — _Aspirante a CTO / Estudiante de Ingeniería de Sistemas e Informática_[cite: 3]
+- **Johan Felipe Prado Guerrero 2242004** — _Aspirante a CTO / Estudiante de Ingeniería de Sistemas e Informática_
     
-- **Asignatura:** Dirección Empresarial[cite: 3]
+- **Asignatura:** Dirección Empresarial H2
