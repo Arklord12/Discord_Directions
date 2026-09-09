@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Simulator - Informe</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="app-shell">
+    
+    <!-- 1. Barra Lateral de Servidores -->
+    <nav class="server-rail" id="server-stack" aria-label="Servidores">
+      <!-- Generado por JS -->
+    </nav>
+
+    <!-- 2. Barra de Canales -->
+    <aside class="channel-rail" aria-label="Canales">
+      <header class="workspace-name">
+        <span id="ui-server-name">Cargando...</span>
+        <div class="crud-actions" id="server-actions">
+           <!-- Generado por JS -->
+        </div>
+      </header>
+      <nav class="channel-scroll">
+        <div class="category-header">
+          <span>Canales de texto</span>
+          <button onclick="abrirModalCrearCanal()" title="Crear Canal"><i data-lucide="plus" width="16"></i></button>
+        </div>
+        <div id="channel-list">
+          <!-- Generado por JS -->
+        </div>
+      </nav>
+    </aside>
+
+    <!-- 3. Área Principal de Chat -->
+    <main class="chat-column">
+      <header class="chat-header">
+        <i data-lucide="hash" width="24" color="#949ba4"></i>
+        <h2 class="header-title" id="ui-channel-name">cargando</h2>
+        <span class="header-desc" id="ui-channel-desc">Descripción</span>
+      </header>
+      
+      <div class="messages-area" id="messages-container">
+        <!-- Generado por JS -->
+      </div>
+
+      <div class="composer-wrap">
+        <form class="composer" id="message-form">
+          <button type="button" style="background:transparent; padding:0; display:flex;" onclick="abrirModalEnviarImagen()" title="Enviar Imagen" id="btn-adjuntar">
+            <i data-lucide="plus-circle" width="24" color="#b5bac1"></i>
+          </button>
+          <input id="message-input" type="text" autocomplete="off" placeholder="Enviar mensaje..." disabled>
+          <button type="submit" style="background:transparent; border:none; padding: 4px;" id="btn-enviar" disabled>
+            <i data-lucide="send" width="20" color="#5865f2"></i>
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- 4. Barra Lateral de Usuarios -->
+    <aside class="member-rail" aria-label="Miembros">
+        <div class="category-header" style="margin-left: 0;">
+            <span>Usuarios</span>
+            <button onclick="abrirModalCrearUsuario()" title="Añadir Usuario"><i data-lucide="user-plus" width="16"></i></button>
+        </div>
+        <div id="dynamic-users-container">
+            <!-- Generado por JS -->
+        </div>
+    </aside>
+
+  </div>
+
+  <!-- MODAL GENÉRICO PARA CRUD -->
+  <div class="modal-overlay" id="generic-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="modal-title">Título</h2>
+            <p id="modal-desc">Descripción</p>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <!-- Campos dinámicos inyectados por JS -->
+        </div>
+        <div class="modal-footer">
+            <button class="btn-cancel" onclick="cerrarModal()">Cancelar</button>
+            <button class="btn-submit" id="modal-submit-btn">Guardar</button>
+        </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE PERFIL DE USUARIO TIPO DISCORD -->
+  <div class="profile-modal-overlay" id="profile-modal" onclick="if(event.target === this) cerrarPerfil()">
+    <div class="profile-card">
+      <button class="profile-close" onclick="cerrarPerfil()"><i data-lucide="x" width="16"></i></button>
+      <div class="profile-banner" id="profile-banner"></div>
+      <div class="profile-header">
+        <div class="profile-avatar-wrap">
+          <!-- Contenedor dinámico del avatar -->
+          <div id="profile-avatar-container" style="width:100%; height:100%; border-radius:50%; overflow:hidden; display:grid; place-items:center; font-weight:bold; font-size:24px;"></div>
+          <div class="status-indicator" id="profile-status"></div>
+        </div>
+      </div>
+      <div class="profile-body">
+        <div class="profile-card-inner">
+          <h3 class="profile-name" id="profile-name">Nombre</h3>
+          <div class="profile-badges">
+            <span class="profile-badge" id="profile-role">Rol</span>
+          </div>
+          <div class="profile-divider"></div>
+          <h4 class="profile-section-title">Sobre mí</h4>
+          <div class="profile-bio" id="profile-bio">Descripción...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
