@@ -106,7 +106,7 @@
                                 idUsuario: 'u4', 
                                 texto: 'A Jason y Stan les encantaba jugar, pero no encontraban una forma fiable de hablar mientras jugaban en línea. Aprovechando lo que aprendieron desarrollando **Fates Forever**, publican la primera versión de un nuevo proyecto: **una aplicación de chat centrada en videojuegos para ordenador y móviles llamada «Discord»**.', 
                                 hora: 'MAYO 2015', 
-                                imagen: 'assets/images/Discord(1).png' // <-- Reemplaza por tu imagen real
+                                imagen: 'Discord_Directions/assets/images/Discord(1).png' // <-- Reemplaza por tu imagen real
                             },
                             { 
                                 id: 'm10', 
