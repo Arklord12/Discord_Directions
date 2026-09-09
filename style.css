@@ -1,5 +1,10 @@
 
     :root {
+      --color-blue: #5865F2;
+      --color-red: #da373c;
+      --color-green: #23a55a;
+      --color-orange: #e67e22;
+      --color-pink: #eb459e;
       --coal: #111214;
       --server: #1b1d21;
       --channel: #2b2d31;
@@ -9,12 +14,17 @@
       --text: #f2f3f5;
       --brand: #5865f2;
       --brand-soft: #7983f5;
-      
       --color-violet: #bd8cff;
       --color-gold: #f0b232;
       --color-teal: #26c6a5;
       --color-gray: #b5bac1;
     }
+ /* Clases para el color de fondo del avatar cuando no hay imagen */
+.avatar-blue { background-color: var(--color-blue); color: white; }
+.avatar-red { background-color: var(--color-red); color: white; }
+.avatar-green { background-color: var(--color-green); color: white; }
+.avatar-orange { background-color: var(--color-orange); color: white; }
+.avatar-pink { background-color: var(--color-pink); color: white; }
     
     * { box-sizing: border-box; }
     body { margin: 0; font-family: "Work Sans", sans-serif; color: var(--text); background: var(--coal); overflow: hidden; }
