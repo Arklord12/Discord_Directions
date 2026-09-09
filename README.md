@@ -7,7 +7,7 @@ Un entorno web interactivo que simula la experiencia de usuario y arquitectura d
 
 El proyecto se encuentra desplegado de forma permanente a través de GitHub Pages:
 
-🔗 **[Ver Informe Interactivo](https://www.google.com/search?q=https://arklord12.github.io/Discord_Directions/)**
+🔗 **[Ver Informe Interactivo](https://arklord12.github.io/Discord_Directions/)**
 
 ## 🎯 Objetivo del Proyecto
 
