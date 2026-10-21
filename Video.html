@@ -2,21 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirigiendo a YouTube...</title>
   
-
-  <meta http-equiv="refresh" content="0; url="https://www.youtube.com/watch?v=NbgAHpD4W_8&t=210s">
-  
+  <!-- Redirección automática inmediata por metadatos HTTP -->
+  <meta http-equiv="refresh" content="0; url=https:https://www.youtube.com/watch?v=NbgAHpD4W_8&t=210s">
   <link rel="canonical" href="https://www.youtube.com/watch?v=NbgAHpD4W_8&t=210s">
 
-  <!-- 2. Redirección por JavaScript como respaldo -->
+  <!-- Respaldo por JavaScript sin contaminar el historial del navegador -->
   <script>
     window.location.replace("https://www.youtube.com/watch?v=NbgAHpD4W_8&t=210s");
   </script>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-  <!-- 3. Enlace manual por si el navegador bloquea scripts o refrescos automáticos -->
-  <p>Redirigiendo al video...</p>
-  <p>Si no carga automáticamente, <a href="https://www.youtube.com/watch?v=NbgAHpD4W_8&t=210s">haz clic aquí para ver el video en YouTube</a>.</p>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 80vh; margin: 0; color: #333; background-color: #fafafa;">
+  <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">Redirigiendo al video...</p>
+  <p style="font-size: 0.95rem; color: #666;">
+    Si no carga automáticamente, 
+    <a href="https://www.youtube.com/watch?v=NbgAHpD4W_8&t=210s" style="color: #0066cc; text-decoration: underline; font-weight: 500;">haz clic aquí para abrirlo en YouTube</a>.
+  </p>
 </body>
 </html>
